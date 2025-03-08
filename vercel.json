@@ -2,15 +2,11 @@
     "version": 2,
     "builds": [
         {
-            "src": "soft-voting-system/public/index.php",
+            "src": "api/index.php",
             "use": "@vercel/php"
-        },
-        {
-            "src": "package.json",
-            "use": "@vercel/static"
         }
-    ],
+          ],
     "routes": [
-        { "src": "/(.*)", "dest": "/soft-voting-system/public/index.php" }
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ]
 }
